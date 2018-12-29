@@ -156,7 +156,7 @@ All RLlib agents are compatible with the `Tune API <tune-usage.html>`__. This en
             "config": {
                 "num_gpus": 0,
                 "num_workers": 1,
-                "sgd_stepsize": tune.grid_search([0.01, 0.001, 0.0001]),
+                "lr": tune.grid_search([0.01, 0.001, 0.0001]), # here should be lr for Ray-0.6
             },
         },
     })
